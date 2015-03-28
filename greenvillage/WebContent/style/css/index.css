@@ -1,0 +1,245 @@
+#top :hover {
+	background-color: #4ECA75 !important;
+}
+
+#ahover {
+	color: #3EAF5F;
+}
+
+#jianyi :hover {
+	color: #298646 !important;
+}
+
+#question :hover {
+	color: #298646 !important;
+}
+
+#seacherSpan {
+	width: 140px;
+	height: 40px;
+	border: 2px #3EAF5F solid;
+	display: block;
+	float: left;
+	background-color: #3EAF5F;
+	font-family: '方正兰亭超细黑简体';
+	color: #FEFEFE;
+	font-size: 24px;
+	line-height: 40px;
+}
+
+#seacher {
+	width: 510px;
+	height: 40px;
+	border: 2px #3EAF5F solid;
+	border-right: none;
+	float: left;
+	outline: none;
+	font-size: 20px;
+	color: #ABA895;
+	padding-left: 4px;
+}
+
+#seacherSpan:hover {
+	/*鼠标放上去之后要变为箭头  */
+	border: 2px #2E8E4B solid;
+	background-color: #2E8E4B;
+}
+/*点击查看更多商品信息  */
+.clickLookMore {
+	background-color: #3EAF5F;
+	text-align: center;
+	margin-top: 3px;
+	font-family: '方正兰亭超细黑简体';
+	line-height: 50px;
+	padding-top: 10px;
+}
+
+.clickLookMore:hover {
+	background-color: #2E8E4B;
+}
+
+/*suggestion的样式  */
+#sugSubmit {
+	outline: none;
+	font-family: '方正兰亭超细黑简体';
+	font-size: 25px;
+	background-color: #3EAF5F;
+	border: none;
+	color: #fff;
+	width: 375px;
+	height: 46;
+	line-height: 46px;
+	margin-left: 240px;
+}
+
+#sugSubmit:hover {
+	outline: none;
+	background-color: #2E8E4B;
+}
+
+/*注册页面的样式開始  */
+#regSubmit {
+	outline: none;
+	font-family: '方正兰亭超细黑简体';
+	font-size: 25px;
+	background: #3EAF5F;
+	border: none;
+	color: #fff;
+	width: 185px;
+	height: 46;
+	line-height: 46px;
+}
+
+#regSubmit:hover {
+	outline: none;
+	background: #2E8E4B;
+}
+
+#regForm label {
+	margin-bottom: 0px;
+}
+/*注册页面的样式結束  */
+
+/*登录页面的样式开始  */
+#loginSubmit {
+	font-family: '方正兰亭超细黑简体';
+	font-size: 25px;
+	background: #3EAF5F;
+	border: none;
+	color: #fff;
+	width: 185px;
+	height: 46;
+	line-height: 46px;
+}
+
+#loginSubmit:hover {
+	outline: none;
+	background: #2E8E4B;
+}
+
+#loginForm label {
+	margin-bottom: 0px;
+}
+
+/*登录页面的样式结束  */
+
+/*regEmailCheck頁面開始*/
+#service:hover {
+	/* border:1px #2E8E4B solid; */
+	box-shadow: 2px 2px 10px #909090;
+	color: black;
+}
+
+#checkEmail:hover {
+	box-shadow: 2px 2px 10px #909090;
+	color: black;
+	/* border:1px #2E8E4B solid; */
+}
+
+#regEmailCheck {
+	width: 400px;
+	color: #fff;
+	line-height: 65px;
+	font-family: '方正兰亭超细黑简体';
+	margin-left: 25px;
+	background: #3EAF5F;
+	font-size: 30px;
+	padding-left: 25px;
+}
+
+#regEmailCheck:hover {
+	background-color: #2E8E4B;
+}
+/*regEmailCheck頁面結束*/
+
+/* index页面开始 */
+.horizontal {
+	width: 16px;
+	height: 2px;
+	top: 14px;
+	left: 7px;
+}
+
+/* index页面结束  */
+
+/* 商品详情页开始 */
+.btn-select {
+	position: relative;
+	display: inline-block;
+	width: 150px;
+	height: 25px;
+	background-color: #f80;
+	font: 14px/20px "Microsoft YaHei";
+	color: #fff;
+}
+
+.btn-select .cur-select {
+	position: absolute;
+	display: block;
+	width: 150px;
+	height: 25px;
+	line-height: 25px;
+	background: #f80 url(ico-arrow.png) no-repeat 125px center;
+	text-indent: 10px;
+}
+
+.btn-select:hover .cur-select {
+	background-color: #f90;
+}
+
+.btn-select select {
+	/*position: absolute;*/
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 25px;
+	opacity: 0;
+	filter: alpha(opacity : 0; );
+	font: 14px/20px "Microsoft YaHei";
+	color: #f80;
+}
+
+.btn-select select option {
+	text-indent: 10px;
+}
+
+.btn-select select option:hover {
+	background-color: #f80;
+	color: #fff;
+}
+/*商品详情页结束*/
+
+/*addShopCarSuccess.jsp开始*/
+#continueShopping {
+	color: #333333 !important;
+}
+
+#continueShopping:hover {
+	text-decoration: none;
+	color: #2E8E4B !important;
+	-moz-box-shadow: 2px 2px 3px #2E8E4B;
+	-webkit-box-shadow: 2px 2px 3px #2E8E4B;
+	box-shadow: 2px 2px 3px #2E8E4B;
+}
+#checkShoper {
+	color: #333333 !important;
+}
+#checkShoper:hover {
+	text-decoration: none;
+	color: #2E8E4B !important;
+	-moz-box-shadow: 2px 2px 3px #2E8E4B;
+	-webkit-box-shadow: 2px 2px 3px #2E8E4B;
+	box-shadow: 2px 2px 3px #2E8E4B;
+}
+/*addShopCarSuccess.jsp结束*/
+
+/* shopCar.jsp开始 */
+#toWriterOrder{
+	float: right; 
+	background: #3EAF5F;
+}
+#toWriterOrder:hover{
+	float: right; 
+	background: #2E8E4B;
+}
+/* shopCar.jsp结束 */

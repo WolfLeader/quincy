@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+
+  	<!--配置为开发模式  -->
+    <constant name="struts.devMode" value="true" />
+    <!-- 把扩展名配置为action -->
+    <constant name="struts.action.extension" value="action" />
+    <!--把主题配置为sample  -->
+    <constant name="struts.ui.theme" value="simple" />
+    <package name="default" namespace="/" extends="struts-default">
+    
+       <!--用户登录之后，跳转到之前正在访问的页面，拦截器  -->
+       <interceptors>
+       		<interceptor name="checkActiveEmailInterceptor" class="checkActiveEmailInterceptor">
+       				
+       		</interceptor>
+       		<interceptor name="returnUserBeforeBrosePageInterceptor" class="returnUserBeforeBrosePageInterceptor">
+       				
+       		</interceptor>
+       		<interceptor-stack name="checkActiveEmailInterceptorStack">
+       			<interceptor-ref name="defaultStack"></interceptor-ref>
+       			<interceptor-ref name="checkActiveEmailInterceptor"></interceptor-ref>
+       		</interceptor-stack>
+       </interceptors>
+       <global-results>
+       		<result name="activeAfterToIndex" >/index.jsp</result>
+       		<result name="activeuserafter" type="redirectAction">${userActivePath}</result>
+       		<result name="noactiveuser" >/WEB-INF/jsp/userAction/regEmailCheck.jsp</result>
+       </global-results>
+       
+       
+       
+       <action name="home_*" class="homeAction" method="{1}">		
+       		<result name="{1}">/WEB-INF/jsp/homeAction/{1}.jsp</result>
+       		
+       </action>
+       
+       
+       
+       <!--用户模块  -->
+       <action name="user_*" class="userAction" method="{1}">
+       		<!-- <interceptor-ref name="checkActiveEmailInterceptorStack"></interceptor-ref> -->
+       		<result name="active">/WEB-INF/jsp/userAction/regEmailCheck.jsp</result>
+       		<!-- <result name="toreg" type="redirectAction">/WEB-INF/jsp/userAction/reg.jsp</result> -->
+       		<result name="reg">/WEB-INF/jsp/userAction/regEmailCheck.jsp</result>
+       		
+       		<result name="login">/WEB-INF/jsp/userAction/staticReg.jsp</result>
+       </action>
+       
+        
+       
+       <!--建议模块  -->
+       <action name="suggestion_*" class="suggestionAction" method="{1}">
+       		<!-- <interceptor-ref name="returnUserBeforeBrosePageInterceptor"></interceptor-ref> -->
+       		<result name="tosuggestion">/WEB-INF/jsp/header/suggestion.jsp</result>
+       </action>   
+       
+       <!--面类配置文件  -->
+       <action name="noodleGoods_*" class="noodleGoodsAction" method="{1}">
+       		<result name="description">/WEB-INF/jsp/goods/noodleGoods.jsp</result>
+       		<result name="toshopcar">/WEB-INF/jsp/shopCar/shopCar.jsp</result>
+       		<result name="addShopCarSuccess">/WEB-INF/jsp/shopCar/addShopCarSuccess.jsp</result>
+       		<result name="topay">/WEB-INF/jsp/goods/noodleGoods.jsp</result>
+       		<result name="pay">/WEB-INF/jsp/goods/noodleGoods.jsp</result>
+       		<result name="save">/WEB-INF/jsp/goods/success.jsp</result>
+       </action>  
+       
+       
+       <!--订单模块  -->
+       <action name="order_*" class="orderAction" method="{1}">
+       		<result name="toWriteOrderDesc">/WEB-INF/jsp/order/order.jsp</result>
+       </action>
+       
+       
+       
+    </package>
+   
+</struts>

@@ -1,0 +1,10 @@
+<%
+	String ctx = request.getContextPath();
+	String commonCssPath = ctx + "/style/css";
+	String commonJsPath = ctx + "/script";
+	String commonImgPath = ctx + "/style/images";
+	pageContext.setAttribute("commonCssPath", commonCssPath);
+	pageContext.setAttribute("commonJsPath", commonJsPath);
+	pageContext.setAttribute("commonImgPath", commonImgPath);
+	pageContext.setAttribute("ctx", ctx);
+%>

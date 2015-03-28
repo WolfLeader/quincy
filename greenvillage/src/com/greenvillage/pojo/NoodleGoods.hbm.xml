@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+ <hibernate-mapping package="com.greenvillage.pojo">
+ 
+ 	<class name="NoodleGoods" table="t_noodleGoods">
+ 		<id name="noodleId" type="string" column="noodleId">
+ 			<generator class="assigned"></generator>
+ 		</id>
+ 		
+ 		<property name="noodleName" column="noodleName" type="string"></property>
+ 		<property name="noodlePrice" column="noodlePrice" type="string"></property>
+ 		<property name="noodleSellCount" column="noodleSellCount" type="string"></property>
+ 		<property name="noodlePublishDate" column="noodlePublishDate" type="string"></property>	
+        <property name="noodlePromotionPrice" column="noodlePromotionPrice" type="string"></property>
+ 	    <property name="noodleProductionInformation" column="noodleProductionInformation" type="string"></property>
+ 		<property name="noodleComment" column="noodleComment" type="string"></property>
+ 		<property name="noodleProductionDate" column="noodleProductionDate" type="string"></property>
+ 		<property name="noodleShelfLife" column="noodleShelfLife" type="string"></property>
+ 		<property name="noodleFrom" column="noodleFrom" type="string"></property>
+ 		<property name="noodleCount" column="noodleCount" type="string"></property>
+ 		<property name="noodleGreenLevel" column="noodleGreenLevel" type="string"></property>
+ 		<property name="noodleType" column="noodleType" type="string"></property>
+ 		<property name="noodleImages" column="noodleImages" type="string"></property>
+ 		<property name="noodleState" column="noodleState" type="string"></property>
+ 		<property name="noodleSellMode" column="noodleSellMode" type="string"></property>
+ 		<property name="noodleDetailedIntroduction" column="noodleDetailedIntroduction" type="string"></property>
+ 		<property name="phone" column="phone" type="string"></property>
+ 		<property name="qq" column="qq" type="string"></property>
+ 		<property name="weixin" column="weixin" type="string"></property>
+ 		<property name="telPhone" column="telPhone" type="string"></property>
+ 		<property name="formShop" column="formShop" type="string"></property>
+ 		<property name="noodleNumber" column="noodleNumber" type="string"></property>
+ 		<property name="noodlePrecision" column="noodlePrecision" type="string"></property>
+ 		<property name="noodleStrength" column="noodleStrength" type="string"></property>
+ 		<property name="noodleIngredient" column="noodleIngredient" type="string"></property>
+ 		<property name="noodleBarCode" column="noodleBarCode" type="string"></property>
+ 		<property name="noodleBrand" column="noodleBrand" type="string"></property>
+ 		<property name="noodleSeries" column="noodleSeries" type="string"></property>
+ 		<property name="noodleSiteFactory" column="noodleSiteFactory" type="string"></property>
+ 		<property name="noodleNameFactory" column="noodleNameFactory" type="string"></property>
+ 		<property name="noodleStandardNumber" column="noodleStandardNumber" type="string"></property>
+ 		<property name="noodleProductionLicence" column="noodleProductionLicence" type="string"></property>
+ 		<property name="noodleNutritionFacts" column="noodleNutritionFacts" type="string"></property>
+ 		<property name="noodleSaveMethod" column="noodleSaveMethod" type="string"></property>
+ 		<property name="noodlePackageType" column="noodlePackageType" type="string"></property>
+ 		<property name="noodleWeight" column="noodleWeight" type="string"></property>
+ 		<property name="noodleEffect" column="noodleEffect" type="string"></property>
+ 		
+ 	</class>
+ 	
+ </hibernate-mapping>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+ <hibernate-mapping package="com.greenvillage.pojo">
+ 
+ 	<class name="User" table="t_user" >
+ 		<!--标识主键  -->
+ 		<!--这里的name是要和类中的name的名字相同，如果数据库里边的这一列的名字和类中的名字是相同的可以不写后边的 column = "id"，如果不相同 column里边写的是数据库中这个字段的名字-->
+ 		<id name="userId" type="string" column="userId">
+ 			<generator class="assigned"></generator>  
+ 		</id>
+ 		
+ 		<property name="userName" column="userName" type="string"></property>
+ 		<property name="userPwd" column="userPwd" type="string"></property>
+ 		<property name="userEmail" column="userEmail" type="string"></property>
+ 		<property name="userState" column="userState" type="int"></property>
+ 		<property name="activeCode" column="activeCode" type="string"></property>
+ 		
+ 	</class>
+ 	
+ </hibernate-mapping>
